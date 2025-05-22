@@ -3,10 +3,6 @@
   --gaya-tulisan: "Helvetica";
 }
 
-body {
-  padding-top: 80px;
-}
-
 .p-100 {
   padding-left: 100px;
   padding-right: 100px;
@@ -14,9 +10,8 @@ body {
 
 .effect-underline:hover {
   text-decoration: underline;
-  text-decoration-color: #b82525;
-  text-decoration-line: 4px;
-  text-underline-offset: 8px;
+  text-decoration-color: #9D7C5F;
+  text-underline-offset: 6px;
   text-decoration-thickness: 2px;
 }
 
@@ -38,26 +33,35 @@ body {
   font-weight: bold;
   color: #121212;
   padding-left: 10px;
-  padding-top: 15px;
+  /* padding-top: 15px; */
 }
 
-/* Header - modified for better visibility */
+.sticky-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* opsional: efek bayangan */
+}
+
+
+/* Header*/
 #carouselExampleCaptions {
-  height: 400px;
   margin-top: 20px;
 }
-
-#carouselExampleCaptions .banner {
+.banner {
   height: 400px;
   object-fit: cover;
-  object-position: center 30%; /* Position to show more of the bottom part */
   filter: brightness(50%);
 }
 
-/* #carouselExampleCaptions img{
+#carouselExampleCaptions img{
     filter: brightness(50%);
+}
 
-} */
+.carousel-indicators [data-bs-target] {
+  margin-bottom: 70px;
+}
 
 .logo-banner {
   max-width: 100px;
@@ -65,7 +69,18 @@ body {
 }
 
 /* Card */
-.card {
+.main-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.section-ringkasan {
+  margin-top: 82px;
+  padding-top: 40px;
+  margin-bottom: 95px;
+}
+
+.card-menu {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -81,6 +96,17 @@ body {
 
 .card-title {
   font-weight: bold;
+}
+
+.placeholderr {
+  font-size: 24px;
+  color: #FFEACE;
+  font-weight: bold;
+}
+
+.placeholderr:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Menu section */
@@ -110,6 +136,7 @@ body {
   background-color: #ffeace;
   padding: 40px;
   margin-top: 50px;
+  width: 99%;
   border-radius: 10px;
 }
 
@@ -132,7 +159,11 @@ body {
 
 /* Testimonials */
 #testimonial .card {
-  border-left: 4px solid #b82525;
+  background-color: transparent;
+}
+
+.text-tag {
+  color: #888888;
 }
 
 /* Contact form */
@@ -148,6 +179,7 @@ body {
   padding: 20px 40px;
   border-radius: 6px;
 }
+
 .buttom-subscribe {
   color: #684b30;
   font-size: 12pt;
@@ -164,9 +196,30 @@ body {
   color: #000;
 }
 
+.home-button {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  transform: rotate(180deg);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 999;
+}
+
+.home-button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* Footer */
-footer {
-  margin-top: 50px;
+.bg-footer {
+  margin-top: 20px;
+  background-color: #684B30; 
+}
+
+.bg-footer p{
+  color: #FFEACE;
 }
 
 /* Responsive adjustments */
@@ -187,5 +240,22 @@ footer {
 
   .sub-title {
     font-size: 16pt;
+  }
+
+  #testimonial .card{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .card-food {
+    margin-top: 20px;
+  }
+  
+  .home-button {
+    right: 20px;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
   }
 }
