@@ -1,0 +1,191 @@
+/* Existing styles with modifications */
+:root {
+  --gaya-tulisan: "Helvetica";
+}
+
+body {
+  padding-top: 80px;
+}
+
+.p-100 {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.effect-underline:hover {
+  text-decoration: underline;
+  text-decoration-color: #b82525;
+  text-decoration-line: 4px;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+}
+
+#banner {
+  background: rgb(0, 0, 0);
+}
+
+#navbarSupportedContent {
+  padding-left: 15px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.title-heading {
+  font-family: var(--font-family);
+  font-weight: bold;
+  color: #121212;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+/* Header - modified for better visibility */
+#carouselExampleCaptions {
+  height: 400px;
+  margin-top: 20px;
+}
+
+#carouselExampleCaptions .banner {
+  height: 400px;
+  object-fit: cover;
+  object-position: center 30%; /* Position to show more of the bottom part */
+  filter: brightness(50%);
+}
+
+/* #carouselExampleCaptions img{
+    filter: brightness(50%);
+
+} */
+
+.logo-banner {
+  max-width: 100px;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+}
+
+/* Card */
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(50%);
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+/* Menu section */
+#menu-section .card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.carousel-indicators {
+  bottom: -80px;
+}
+
+/* tentang */
+.judul-section {
+  font-size: 16pt;
+  color: #684b30;
+  font-weight: bold;
+}
+
+.judul-menu {
+  font-size: 14pt;
+  font-weight: 400;
+  color: #9d7c5f;
+}
+
+.tentang {
+  background-color: #ffeace;
+  padding: 40px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.card .card-title {
+  font-size: 14pt;
+  font-weight: 100;
+}
+
+.card .card-subtitle {
+  font-size: 12pt;
+  font-weight: 100;
+  color: #797979;
+  margin-bottom: 10px;
+}
+
+.card .card-text {
+  font-size: 12pt;
+  font-weight: 100;
+}
+
+/* Testimonials */
+#testimonial .card {
+  border-left: 4px solid #b82525;
+}
+
+/* Contact form */
+#kontak .form-control {
+  border-radius: 0;
+  padding: 12px;
+}
+
+.btn-brown {
+  background-color: #684b30;
+  color: #fff;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 6px;
+}
+.buttom-subscribe {
+  color: #684b30;
+  font-size: 12pt;
+}
+
+#kontak .btn-primary {
+  background-color: #b82525;
+  border: none;
+  padding: 12px;
+  border-radius: 0;
+}
+
+.kontak a {
+  color: #000;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .p-100 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #carouselExampleCaptions,
+  #carouselExampleCaptions .banner {
+    height: 300px;
+  }
+
+  .title-banner {
+    font-size: 28pt;
+  }
+
+  .sub-title {
+    font-size: 16pt;
+  }
+}
