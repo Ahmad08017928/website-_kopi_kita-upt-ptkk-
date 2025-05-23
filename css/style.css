@@ -3,11 +3,10 @@
 }
 
 :root {
-  --gaya-tulisan: "Helvetica", Arial, sans-serif;
+  --gaya-tulisan: "Helvetica", Arial, Verdana;
   --primary-brown: #684b30;
   --light-brown: #9d7c5f;
   --cream: #ffeace;
-  --dark-text: #121212;
 }
 
 body {
@@ -36,14 +35,14 @@ body {
 .title-heading {
   font-family: var(--gaya-tulisan);
   font-weight: bold;
-  color: var(--dark-text);
+  color: #121212;
   margin: 0;
   margin-left: 10px;
   font-size: 1.5rem;
 }
 
 .nav-link {
-  color: var(--dark-text) !important;
+  color: #121212 !important;
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -83,7 +82,7 @@ body {
 }
 
 .title-banner {
-  font-size: 3rem;
+  font-size: 24pt;
   font-weight: bold;
   color: white;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
@@ -91,7 +90,7 @@ body {
 }
 
 .sub-title {
-  font-size: 1.2rem;
+  font-size: 16pt;
   color: var(--cream);
   text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
 }
@@ -145,15 +144,13 @@ body {
 }
 
 .judul-section {
-  font-size: 2.5rem;
+  font-size: 16pt;
   color: var(--primary-brown);
   font-weight: bold;
-  margin-bottom: 50px;
-  text-align: center;
 }
 
 .judul-menu {
-  font-size: 1.5rem;
+  font-size: 14pt;
   font-weight: 600;
   color: var(--light-brown);
   margin-bottom: 20px;
@@ -247,7 +244,7 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: var(--dark-text);
+  color: #121212;
   transition: color 0.3s ease;
 }
 
